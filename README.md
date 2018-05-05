@@ -72,12 +72,10 @@ At this point your browser should be open to the graphs summary page.  If not, y
 ### Custom Instance Sizes
 GCERUG will query the GCE API to build a map of image sizes.  If you build instances with non-default sizes, you'll need to add the custom size mapping to the `custom_sizes.dict` file.
 
-Custom sizes should be added in form of a dictionary
+Custom size should be a dictionary data type
 ```
 {u'custom-1-2560': (1, 2560)}
 {u'custom-1-6656': (1, 6656)}
 {u'custom-2-10240': (2, 10240)}
 {u'custom-4-10240': (4, 10240)}
 ```
-
-
