@@ -33,7 +33,6 @@ import os
 import json
 import ast
 import pygal
-from pygal.style import Style
 from googleapiclient import discovery
 from oauth2client.client import GoogleCredentials
 from flask import Flask, render_template, redirect, url_for
@@ -69,7 +68,7 @@ class GCEStats(object):
                 self.instance_sizes.update(ast.literal_eval(size))
         self.credentials = GoogleCredentials.get_application_default()
         self.compute = discovery.build('compute', 'v1', credentials=self.credentials)
-        self.custom_style = Style(background='#B7C9C7', plot_background='#B7C9C7')
+        self.custom_style = pygal.style.Style(background='#B7C9C7', plot_background='#B7C9C7')
 
     def get_instances(self):
         """
