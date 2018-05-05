@@ -1,0 +1,9 @@
+body            { font-family: sans-serif; background: #B7C9C7; }
+a, h2           { color: #377ba8; }
+h1              { color: #393E41; font-size: 1.4em }
+h1, h2          { font-family: sans-serif, serif; margin: 0 }
+h2              { font-size: 1.2em; }
+a:link          { text-decoration: none; }
+a:visited       { text-decoration: none; }
+a:hover         { text-decoration: none; }
+a:active        { text-decoration: none; }

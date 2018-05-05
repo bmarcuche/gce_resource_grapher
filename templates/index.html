@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+        <title>Google Compute Resource Usage</title>
+    </head>
+    <body>
+    <div align="center">
+    <h1> Google Compute Engine Usage By Region </h1>
+    <ul id="regions">
+    {% for item in regions %}
+        <a href="{{ item }}"><h3>{{ item }}</h3></a>
+    {% endfor %}
+        <a href="summary"><h3>stats all regions</h3></a>
+    </ul>
+    </div>
+    </body>
+</html>

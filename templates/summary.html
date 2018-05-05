@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+        <title>Google Compute Resource Usage</title>
+    </head>
+    <body>
+        <div align="center">
+            {{ instance_chart.render(is_unicode=True)|safe }}{{ cpu_chart.render(is_unicode=True)|safe }}
+            <br>
+            {{ disk_chart.render(is_unicode=True)|safe }}{{ mem_chart.render(is_unicode=True)|safe }}
+            <br>
+            {{ instance_cpu_chart.render(is_unicode=True)|safe }}{{ mem_disk_chart.render(is_unicode=True)|safe }}
+            <br>
+            <a href="index.html">stats by region</a>
+    </body>
+</html>

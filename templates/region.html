@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+        <title>Google Compute Resource Usage</title>
+    </head>
+    <body>
+        <div align="center">
+            {{ resource_chart.render(is_unicode=True)|safe }}
+            {{ mem_disk_chart.render(is_unicode=True)|safe }}
+        <br>
+        <a href="index.html">stats by region</a> | <a href="summary">stats all regions</a>
+        </div>
+    </body>
+</html>
